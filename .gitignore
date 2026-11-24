@@ -10,3 +10,4 @@ htmlcov/
 scored*.csv
 # Secrets never enter git. Commit configs/settings.example.env instead.
 .env
+service.log

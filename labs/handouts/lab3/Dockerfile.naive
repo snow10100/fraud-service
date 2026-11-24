@@ -1,6 +1,0 @@
-# Dockerfile.naive: how NOT to do it. Build it once, measure it, then delete it.
-FROM python:3.12
-WORKDIR /app
-COPY . .
-RUN pip install -e ".[dev]"
-CMD uvicorn fraud_service.api.app:create_app --factory --host 0.0.0.0 --port 8000
